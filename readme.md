@@ -2,4 +2,4 @@
 
 Разобъем репозиторий по семинарам:
 
-1. [Семинар 1] ()
+1. [Семинар 1](https://github.com/KirillLakhnov/ComputerTechnology/tree/main/seminar1)
