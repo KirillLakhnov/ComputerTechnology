@@ -56,7 +56,7 @@ int main()
     pid = getpid();
     ppid = getppid();
  
-    printf("My pid = %d, my ppid = %d\n", pid, ppid);
+    printf("My pid = %d, my ppid = %d\n", (int)pid, (int)ppid);
 
     return 0;
 }
