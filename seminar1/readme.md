@@ -116,4 +116,9 @@ int main()
 
 В целом основной принцип работы порожденного процесса очень легко понять наглядно, скомпилировав и запустив код выше.
 
+## Задание 4
 
+Посмотрев на [код](https://github.com/KirillLakhnov/ComputerTechnology/blob/main/seminar1/task4.cpp) в этом задание, обратим внимание на новую функцию:
+```C++
+int execle(const char * __path, const char * __arg0, ...)
+```
