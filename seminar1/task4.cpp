@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
  
-int main(int argc, char *argv[], char *envp[]){
+int main(int argc, char *argv[], char *envp[])
 {
     pid_t child_pid = fork();
     int a = 0, result;
@@ -35,7 +35,7 @@ int main(int argc, char *argv[], char *envp[]){
         Первое слово в командной строке у нас должно совпадать с именем запускаемой программы. 
         Второе слово в командной строке - это имя файла, содержимое которого мы хотим распечатать.*/
 
-        result = execle("/bin/cat", "/bin/cat", !!! аргумент при запуске команды, 0, envp);
+        result = execle("/bin/cat", "/bin/cat", "seminar1/task1.cpp", 0, envp);
 
         if (result < 0)
         {
