@@ -118,7 +118,7 @@ int main()
 
 ## Задание 4
 
-Посмотрев на [код](https://github.com/KirillLakhnov/ComputerTechnology/blob/main/seminar1/task4.cpp) в этом задание, обратим внимание на неизвестную нам ранее функцию:
+Посмотрев на [код](https://github.com/KirillLakhnov/ComputerTechnology/blob/main/seminar1/task4.c) в этом задание, обратим внимание на неизвестную нам ранее функцию:
 ```C++
 int execle(const char * __path, const char * __arg0, ...)
 ```
@@ -137,3 +137,6 @@ int execle(const char * __path, const char * __arg0, ...)
 
 Функция ``execle`` запускает исполняемый файл, передавая ему ряд аргументов.
 Возвращаемое ею значение сообщяет нам была ли ошибка, или нет.
+
+## Задание 5
+
