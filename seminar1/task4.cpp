@@ -8,22 +8,19 @@
 int main(int argc, char *argv[], char *envp[])
 {
     pid_t child_pid = fork();
-    int a = 0, result;
  
-    if (child_pid == -1)
+    if (child_pid < 0)
     { 
         // Ошибка
         printf("Can\'t fork a child process\n"); 
     } 
     else if (child_pid > 0)
     {
-        /* Родительский процесс */
-        a = a + 1; 
- 
+        // Родительский процесс
         pid_t pid = getpid();
         pid_t ppid = getppid();
 
-        printf("pid = %d, ppid = %d, result = %d\n", (int)pid, (int)ppid, a);  
+        printf("pid = %d, ppid = %d, child_pid = %d\n\n", (int)pid, (int)ppid, (int)child_pid); 
     } 
     else 
     {
@@ -35,7 +32,7 @@ int main(int argc, char *argv[], char *envp[])
         Первое слово в командной строке у нас должно совпадать с именем запускаемой программы. 
         Второе слово в командной строке - это имя файла, содержимое которого мы хотим распечатать.*/
 
-        result = execle("/bin/cat", "/bin/cat", "seminar1/task1.cpp", 0, envp);
+        int result = execle("/bin/cat", "/bin/cat", "seminar1/task4.cpp", 0, envp);
 
         if (result < 0)
         {
