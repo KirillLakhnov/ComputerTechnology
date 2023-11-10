@@ -1,5 +1,3 @@
-/* Программа, иллюстрирующая использование системных вызовов open(), read() и close() для чтения информации из файла */
-
 #include <sys/types.h>
 #include <unistd.h>
 #include <stdio.h>
